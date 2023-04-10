@@ -302,7 +302,7 @@ class Mappings(object):
         ])
 
         if inside_vimwiki_link:
-            vim.command('VimwikiFollowLink')
+            vim.command('WikiLinkFollow')
             return
 
         # No link detected, check for viewport or a task
@@ -322,7 +322,7 @@ class Mappings(object):
 
         # No link detected, not a viewport or a task, so delegate to
         # VimwikiFollowLink for link creation
-        vim.command('VimwikiFollowLink')
+        vim.command('WikiLinkFollow')
 
 
 
